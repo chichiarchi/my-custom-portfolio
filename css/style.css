@@ -99,6 +99,10 @@ a:hover {
   text-shadow: var(--accent-glow);
   position: relative;
   width: fit-content;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  padding: 0 4px;
 }
 
 .section-title::after {
@@ -315,7 +319,7 @@ nav {
   border: 2px solid var(--accent-color);
   box-shadow: var(--accent-glow);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
+
 }
 
 #dynamic-photo:hover {
@@ -1271,7 +1275,7 @@ body, header, nav, section, div, h1, h2, h3, h4, h5, h6, p, a, button, input, te
   font-family: var(--font-mono);
   color: var(--text-secondary);
   font-size: 0.9rem;
-  margin-top: -2rem;
+  margin-top: 0;
   margin-bottom: 2.5rem;
 }
 
@@ -1352,27 +1356,72 @@ body, header, nav, section, div, h1, h2, h3, h4, h5, h6, p, a, button, input, te
    RESUME PAGE — MOBILE
 ═══════════════════════════════════════════ */
 @media (max-width: 768px) {
+  /* Hero: stack vertically, enough padding for fixed nav */
   .resume-hero {
     grid-template-columns: 1fr;
-    padding: 4rem 20px 3rem;
-    gap: 2rem;
+    padding: 5rem 20px 2rem;
+    gap: 1.5rem;
   }
 
-  .resume-name { font-size: 2.4rem; }
+  .resume-name {
+    font-size: 2rem;
+    line-height: 1.15;
+    word-break: break-word;
+  }
 
+  .resume-role { font-size: 0.95rem; }
+
+  /* Contacts: wrap cleanly on small screens */
+  .resume-contacts {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .rc-item {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  /* Action buttons: stack vertically */
+  .resume-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn-download,
+  .btn-preview {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.85rem;
+    padding: 0.65rem 1rem;
+  }
+
+  /* Section headings */
+  .resume-col .section-title { font-size: 1.3rem; }
+
+  /* Experience & Education grid: single column */
   .resume-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem 20px 4rem;
+    gap: 1.5rem;
+    padding: 2rem 20px 3rem;
   }
 
-  .resume-col .section-title { font-size: 1.4rem; }
+  /* Tech orbs: smaller, 3 per row */
+  .tech-orbs { gap: 1rem; }
+  .tech-orb  { width: 85px; height: 85px; font-size: 0.7rem; }
 
-  .tech-orb { width: 90px; height: 90px; font-size: 0.75rem; }
+  /* Carousel */
+  .zerog-slide { padding: 1.25rem 1rem; }
+  .zerog-card  { padding: 1.25rem; }
+  .zerog-card h3 { font-size: 1.1rem; }
+  .zerog-card p  { font-size: 0.88rem; }
 
-  .zerog-slide { padding: 1.5rem; }
-  .zerog-card { padding: 1.5rem; }
-  .zerog-card h3 { font-size: 1.2rem; }
+  /* Tech orbs section padding */
+  .tech-orbs-section { padding: 1rem 20px 3rem; }
+  .carousel-section  { padding: 2rem 20px 4rem; }
 }
 
 @media print {

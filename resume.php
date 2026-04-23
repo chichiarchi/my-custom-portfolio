@@ -82,7 +82,6 @@
     <section class="resume-hero container">
 
         <div class="resume-hero__meta scroll-reveal">
-            <span class="resume-tag">anti_gravity://resume</span>
             <h1 class="resume-name">Arvin Christopher<br><span>Latagan</span></h1>
             <p class="resume-role">Full Stack Web Developer</p>
 
@@ -99,6 +98,12 @@
                     <svg width="14" height="14"><use href="#icon-pin"/></svg>
                     Bolinao, Pangasinan
                 </span>
+                <a href="https://github.com/chichiarchi" target="_blank" class="rc-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                    </svg>
+                    github.com/chichiarchi
+                </a>
             </div>
 
             <div class="resume-actions">
@@ -291,8 +296,8 @@
 
     <!-- ═══════════════ ZERO-G CAROUSEL ══════════════ -->
     <section class="carousel-section container">
-        <h2 class="section-title scroll-reveal">Zero-G_Showcase</h2>
-        <p class="carousel-subtitle scroll-reveal">Drag or swipe to explore &mdash; cards tilt in 3D space.</p>
+        <h2 class="section-title scroll-reveal">Projects_Showcase</h2>
+        <p class="carousel-subtitle scroll-reveal">A highlight of my work &mdash; swipe or drag to explore.</p>
 
         <div class="zerog-carousel scroll-reveal">
             <div class="zerog-track" id="zerogTrack">
@@ -354,10 +359,10 @@
                         <div class="zerog-card__icon">
                             <svg width="36" height="36"><use href="#icon-brain"/></svg>
                         </div>
-                        <h3>AI-Augmented Workflow</h3>
-                        <p>Proficient in leveraging AI tools to accelerate build times, automate boilerplate coding, and streamline UI/UX prototyping across all projects.</p>
+                        <h3>Developer Tooling &amp; Workflow</h3>
+                        <p>Experienced in integrating modern developer tools to accelerate build times, reduce boilerplate, and streamline UI/UX delivery across all projects.</p>
                         <div class="zerog-card__tags">
-                            <span>AI Tools</span><span>Automation</span><span>Prototyping</span>
+                            <span>Dev Tools</span><span>Automation</span><span>Prototyping</span>
                         </div>
                     </div>
                 </div>
