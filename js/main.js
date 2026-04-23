@@ -40,6 +40,25 @@ function updateThemeButtonText(theme) {
     }
 }
 
+// Mobile Menu Toggle Logic
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (mobileMenuToggle && navLinks) {
+    mobileMenuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenuToggle.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+        });
+    });
+}
+
 
 // Intersection Observer for scroll animations
 const revealElements = document.querySelectorAll('.scroll-reveal');

@@ -13,13 +13,25 @@
 <header>
     <nav>
         <div class="logo">PORT<span>FOLIO</span></div>
+        
+        <div class="nav-controls">
+            <button id="theme-toggle">LIGHT MODE</button>
+            
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#brand">Brand</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="resume.php" class="nav-resume-cta">RÉSUMÉ</a></li>
         </ul>
-        <button id="theme-toggle">LIGHT MODE</button>
     </nav>
 </header>

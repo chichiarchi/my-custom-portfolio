@@ -10,7 +10,7 @@ $projects = [
         "special" => true
     ],
     [
-        "title" => "🏆 Codefest 2023 Champion",
+        "title" => "Codefest 2023 Champion",
         "category" => "Achievement: Tagisan ng Talino",
         "stack" => "Android, Java/Kotlin, Mobile UI",
         "desc" => "Won 1st place in the STI College Android App Development contest. Built a high-performance mobile solution under strict time constraints.",
