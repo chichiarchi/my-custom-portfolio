@@ -32,6 +32,14 @@ $projects = [
         "desc" => "A personalized, interactive greeting platform. Leverages PHP for dynamic content delivery and custom CSS animations for a premium frontend feel.",
         "link" => "#",
         "special" => true
+    ],
+    [
+        "title" => "Self-Hosted Infrastructure",
+        "category" => "Deployment: Live Environment",
+        "stack" => "Ubuntu LTS, Apache 2, PHP 8",
+        "desc" => "Successfully deployed and maintaining this very portfolio on a personal Linux server. Managed the full-stack lifecycle from codebase to production, including server hardening and DNS management.",
+        "link" => "#",
+        "special" => true
     ]
 ];
 ?>
