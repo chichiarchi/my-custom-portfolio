@@ -137,23 +137,23 @@ endforeach; ?>
 <section id="contact" class="contact container">
     <h2 class="section-title scroll-reveal">Social_Connect</h2>
     <div class="social-links scroll-reveal">
-        <a href="#" class="social-icon" aria-label="Facebook">
+        <a href="https://www.facebook.com/arvinlatagan15" target="_blank" class="social-icon" aria-label="Facebook">
             <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none"
                 stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
             </svg>
             <span>Facebook</span>
         </a>
-        <a href="#" class="social-icon" aria-label="Instagram">
+        <a href="https://www.linkedin.com/in/arvinlatagan/" target="_blank" class="social-icon" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none"
                 stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
             </svg>
-            <span>Instagram</span>
+            <span>LinkedIn</span>
         </a>
-        <a href="#" class="social-icon" aria-label="TikTok">
+        <a href="https://www.tiktok.com/@arvin_softdev?lang=en" target="_blank" class="social-icon" aria-label="TikTok">
             <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none"
                 stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
                 <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
