@@ -379,5 +379,5 @@
 
 </div>
 
-<?php include 'includes/footer.php'; ?>
 <script src="js/resume.js"></script>
+<?php include 'includes/footer.php'; ?>

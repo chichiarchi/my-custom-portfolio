@@ -1,4 +1,10 @@
 <?php
+// Simple router fallback for servers that ignore .htaccess (e.g. php -S)
+if (preg_match('/^\/resume(\/|\?|$)/', $_SERVER['REQUEST_URI'])) {
+    include 'resume.php';
+    exit;
+}
+
 // PHP Logic: Highly specific professional background & tech stack
 $projects = [
     [

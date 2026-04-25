@@ -25,7 +25,9 @@ function trackVisitor() {
     $visitors = [];
     if (file_exists($logFile)) {
         $content = file_get_contents($logFile);
-        $visitors = json_decode($content, true) ?: [];
+        if ($content !== false) {
+            $visitors = json_decode($content, true) ?: [];
+        }
     }
 
     if (isset($visitors[$visitorKey])) {

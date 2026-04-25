@@ -1,10 +1,14 @@
 RewriteEngine On
+Options -MultiViews
 
 # 1. Redirect /index.php to /
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
 RewriteRule ^index\.php$ ./ [R=301,L]
 
-# 2. Allow accessing .php files without the extension (e.g., /resume)
+# 2. Map /resume to resume.php
+RewriteRule ^resume$ resume.php [NC,L]
+
+# 3. General rule for other .php files
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
