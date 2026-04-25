@@ -1,0 +1,22 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <style>
+      .a-path {
+        fill: #00ffcc;
+        filter: url(#glow);
+      }
+      @media (prefers-color-scheme: light) {
+        .a-path {
+          fill: #cc00ff;
+        }
+      }
+    </style>
+  </defs>
+  <!-- Stylized Geometric Cyberpunk 'A' -->
+  <path class="a-path" d="M16 2L2 26H7L16 10L25 26H30L16 2ZM16 14L10 24H22L16 14Z" fill-rule="evenodd" clip-rule="evenodd"/>
+  <rect class="a-path" x="12" y="18" width="8" height="2" />
+</svg>
