@@ -69,7 +69,7 @@ $projects = [
             <div class="photo-glitch-layer"></div>
         </div>
         <div class="brand-text">
-            <h3>Full-Stack Engineer</h3>
+            <h3>Full-Stack Web Developer</h3>
             <p><strong>STI College Alaminos Graduate</strong> and <strong>2023 Tagisan ng Talino Codefest
                     Champion</strong>. I specialize in building manual, high-performance systems from the ground up.</p>
             <p>With 2 years of freelance experience at <strong>Social Owl</strong>, I bridge the gap between complex
@@ -83,30 +83,30 @@ $projects = [
     <h2 class="section-title scroll-reveal">Projects_&_Achievements</h2>
     <div class="gallery-grid">
         <?php foreach ($projects as $index => $project): ?>
-        <div class="gallery-item scroll-reveal <?php echo $project['special'] ? 'glitch-card' : ''; ?>"
-            style="transition-delay: <?php echo ($index % 2) * 0.1; ?>s">
-            <div class="item-inner">
-                <div class="item-header">
-                    <span class="mono category">
-                        <?php echo $project['category']; ?>
-                    </span>
-                    <h3 class="<?php echo $project['special'] ? 'glitch-text' : ''; ?>"
-                        data-text="<?php echo $project['title']; ?>">
-                        <?php echo $project['title']; ?>
-                    </h3>
-                </div>
-                <div class="item-body">
-                    <p>
-                        <?php echo $project['desc']; ?>
-                    </p>
-                    <p class="stack mono">[
-                        <?php echo $project['stack']; ?> ]
-                    </p>
+            <div class="gallery-item scroll-reveal <?php echo $project['special'] ? 'glitch-card' : ''; ?>"
+                style="transition-delay: <?php echo ($index % 2) * 0.1; ?>s">
+                <div class="item-inner">
+                    <div class="item-header">
+                        <span class="mono category">
+                            <?php echo $project['category']; ?>
+                        </span>
+                        <h3 class="<?php echo $project['special'] ? 'glitch-text' : ''; ?>"
+                            data-text="<?php echo $project['title']; ?>">
+                            <?php echo $project['title']; ?>
+                        </h3>
+                    </div>
+                    <div class="item-body">
+                        <p>
+                            <?php echo $project['desc']; ?>
+                        </p>
+                        <p class="stack mono">[
+                            <?php echo $project['stack']; ?> ]
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <?php
-endforeach; ?>
+            <?php
+        endforeach; ?>
     </div>
 </section>
 
@@ -177,7 +177,9 @@ endforeach; ?>
         <a href="https://github.com/chichiarchi" target="_blank" class="social-icon" aria-label="GitHub">
             <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none"
                 stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
             </svg>
             <span>GitHub</span>
         </a>
