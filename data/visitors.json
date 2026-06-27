@@ -1,0 +1,26 @@
+{
+    "676fae1cbcc641a05df82c2de99dae14": {
+        "ip": "0.0.0.0",
+        "user_agent": "Unknown",
+        "first_visit": "2026-06-27 07:34:12",
+        "last_visit": "2026-06-27 07:34:12",
+        "last_page": "Unknown",
+        "visit_count": 1
+    },
+    "0545aaeef5b0e4f82fe0e502ad983428": {
+        "ip": "127.0.0.1",
+        "user_agent": "curl\/8.5.0",
+        "first_visit": "2026-06-27 07:34:26",
+        "last_visit": "2026-06-27 07:34:26",
+        "last_page": "\/",
+        "visit_count": 1
+    },
+    "5b64c2d0caf8f699ff234ddf53e374ca": {
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36",
+        "first_visit": "2026-06-27 07:34:38",
+        "last_visit": "2026-06-27 07:37:42",
+        "last_page": "\/",
+        "visit_count": 4
+    }
+}
