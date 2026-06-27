@@ -11,7 +11,7 @@ function trackVisitor() {
 
     // Ensure data directory exists
     if (!is_dir($logDir)) {
-        mkdir($logDir, 0755, true);
+        @mkdir($logDir, 0755, true);
     }
 
     // Identify visitor
@@ -48,7 +48,7 @@ function trackVisitor() {
     }
 
     // Save logs back to file
-    file_put_contents($logFile, json_encode($visitors, JSON_PRETTY_PRINT));
+    @file_put_contents($logFile, json_encode($visitors, JSON_PRETTY_PRINT));
 }
 
 // Execute tracking

@@ -56,10 +56,10 @@ const server = http.createServer((req, res) => {
         HTTP_USER_AGENT: req.headers['user-agent'] || 'Unknown',
     };
 
-    // Execute php -n -d variables_order=EGPCS index.php
+    // Execute php -n -d variables_order=EGPCS api/index.php
     execFile(
         PHP_PATH,
-        ['-n', '-d', 'variables_order=EGPCS', 'index.php'],
+        ['-n', '-d', 'variables_order=EGPCS', 'api/index.php'],
         { env, cwd: __dirname },
         (error, stdout, stderr) => {
             if (error) {
